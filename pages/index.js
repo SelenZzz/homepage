@@ -9,7 +9,7 @@ import {
   useColorModeValue,
   Button,
 } from '@chakra-ui/react';
-import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub } from 'react-icons/io5';
+import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub, IoMail } from 'react-icons/io5';
 import { Icon16LogoVk } from '@vkontakte/icons';
 import Layout from '../components/layouts/article';
 import Paragraph from '../components/paragraph';
@@ -59,7 +59,7 @@ const Page = () => {
           <Paragraph>
             Пишу чистый и красивый код, изучаю машинное обучение, много времени уделяю написанию
             музыки. На данный момент мне{' '}
-            {(new Date() - new Date('2001-10-08')) / (1000 * 60 * 60 * 24 * 365)} лет.
+            {(new Date() - new Date('2001-08-10')) / (1000 * 60 * 60 * 24 * 365)} лет.
           </Paragraph>
         </Section>
 
@@ -108,9 +108,9 @@ const Page = () => {
           </Heading>
           <List>
             <ListItem>
-              <Link href="https://github.com/SelenZzz" target="_blank">
-                <Button variant="ghost" colorScheme="teal" leftIcon={<IoLogoGithub />}>
-                  @SelenZzz
+              <Link href="mailto: a@yermak.info" target="_blank">
+                <Button variant="ghost" colorScheme="teal" leftIcon={<IoMail />}>
+                  a@yermak.info
                 </Button>
               </Link>
             </ListItem>
@@ -132,6 +132,13 @@ const Page = () => {
               <Link href="https://www.instagram.com/postrockreverb/" target="_blank">
                 <Button variant="ghost" colorScheme="teal" leftIcon={<IoLogoInstagram />}>
                   @postrockreverb
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href="https://github.com/SelenZzz" target="_blank">
+                <Button variant="ghost" colorScheme="teal" leftIcon={<IoLogoGithub />}>
+                  @SelenZzz
                 </Button>
               </Link>
             </ListItem>
