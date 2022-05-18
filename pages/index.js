@@ -63,20 +63,13 @@ const Page = () => {
           </Paragraph>
         </Section>
 
-        <Section delay={0.2}>
+        <Section delay={0.3}>
           <Heading as="h3" variant="section-title">
-            Образование
+            Навыки
           </Heading>
           <Paragraph>
-            <BioSection>
-              <BioYear>2019</BioYear>
-              Лицей информационных технологий ДВФУ
-            </BioSection>
-
-            <BioSection>
-              <BioYear>2023</BioYear>
-              СПБГЭТУ ЛЭТИ
-            </BioSection>
+            Tensorflow, <b>TypeScript</b>, <b>React</b>, HTML5, CSS3, JavaCore, <b>php</b>, NodeJs,
+            SQL
           </Paragraph>
         </Section>
 
@@ -92,12 +85,20 @@ const Page = () => {
           </Paragraph>
         </Section>
 
-        <Section delay={0.3}>
+        <Section delay={0.2}>
           <Heading as="h3" variant="section-title">
-            Навыки
+            Образование
           </Heading>
           <Paragraph>
-            Tensorflow, TypeScript, React, HTML5, CSS3, JavaCore, php, NodeJs, SQL
+            <BioSection>
+              <BioYear>2019</BioYear>
+              Лицей информационных технологий ДВФУ
+            </BioSection>
+
+            <BioSection>
+              <BioYear>2023</BioYear>
+              СПБГЭТУ ЛЭТИ
+            </BioSection>
           </Paragraph>
         </Section>
 
