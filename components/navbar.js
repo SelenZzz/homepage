@@ -67,7 +67,7 @@ const Navbar = (props) => {
         <Stack
           direction={{ base: 'column', md: 'row' }}
           display={{ base: 'none', md: 'flex' }}
-          width={{ base: 'full', md: 'auto' }}
+          width={{ md: 'auto' }}
           alignItems="center"
           flexGrow={1}
           mt={{ base: 4, md: 0 }}
@@ -85,32 +85,6 @@ const Navbar = (props) => {
             GitHub
           </LinkItem>
         </Stack>
-
-        <Box flex={1} align="right">
-          <ThemeToggleButton />
-
-          <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
-            <Menu>
-              <MenuButton
-                as={IconButton}
-                icon={<HamburgerIcon />}
-                variant="outline"
-                aria-label="Options"
-              />
-              <MenuList>
-                <NextLink href="/" passHref>
-                  <MenuItem as={Link}>Обо мне</MenuItem>
-                </NextLink>
-                <NextLink href="/projects" passHref>
-                  <MenuItem as={Link}>Проекты</MenuItem>
-                </NextLink>
-                <MenuItem as={Link} _target="_blank" href="https://github.com/SelenZzz">
-                  GitHub
-                </MenuItem>
-              </MenuList>
-            </Menu>
-          </Box>
-        </Box>
       </Container>
     </Box>
   );

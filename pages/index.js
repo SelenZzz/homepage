@@ -1,11 +1,20 @@
-import NextLink from 'next/link';
-import { Container, Box, Heading, Image, useColorModeValue, Button } from '@chakra-ui/react';
-import { ChevronRightIcon } from '@chakra-ui/icons';
+import {
+  Link,
+  List,
+  ListItem,
+  Container,
+  Box,
+  Heading,
+  Image,
+  useColorModeValue,
+  Button,
+} from '@chakra-ui/react';
+import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub } from 'react-icons/io5';
+import { Icon16LogoVk } from '@vkontakte/icons';
 import Layout from '../components/layouts/article';
 import Paragraph from '../components/paragraph';
 import Section from '../components/section';
 import { BioSection, BioYear } from '../components/bio';
-import { DotList } from '../components/dot-list';
 
 const Page = () => {
   return (
@@ -37,7 +46,7 @@ const Page = () => {
               maxWidth="100px"
               display="inline-block"
               borderRadius="full"
-              src="/images/me.jpg"
+              src="/images/me.png"
               alt="my photo)"
             />
           </Box>
@@ -48,20 +57,10 @@ const Page = () => {
             Обо мне
           </Heading>
           <Paragraph>
-            Пишу на Java чистый и красивый код, изучаю машинное обучение и другие языки
-            программирования, много времени уделяю написанию музыки.
-          </Paragraph>
-          <Paragraph>
-            На данный момент мне{' '}
+            Пишу чистый и красивый код, изучаю машинное обучение, много времени уделяю написанию
+            музыки. На данный момент мне{' '}
             {(new Date() - new Date('2001-10-08')) / (1000 * 60 * 60 * 24 * 365)} лет.
           </Paragraph>
-          <Box align="center" my={4}>
-            <NextLink href="/projects">
-              <Button rightIcon={<ChevronRightIcon />} variant="outline" boxShadow="md">
-                Мои проекты
-              </Button>
-            </NextLink>
-          </Box>
         </Section>
 
         <Section delay={0.2}>
@@ -75,7 +74,7 @@ const Page = () => {
             </BioSection>
             <BioSection>
               <BioYear>2022</BioYear>
-              ВК
+              ВКонтакте — Full Stack Developer
             </BioSection>
             <BioSection>
               <BioYear>2023</BioYear>
@@ -86,25 +85,47 @@ const Page = () => {
 
         <Section delay={0.3}>
           <Heading as="h3" variant="section-title">
-            Разбираюсь в
+            Навыки
           </Heading>
           <Paragraph>
-            <DotList
-              entries={[
-                'Алгоритмы и струтуры данных',
-                'ООП и Паттерны проектирования',
-                'Tensorflow',
-                'SQL',
-                'Git',
-                'Java Core',
-                'SQL',
-                'Git',
-                'Unix',
-                'TypeScript, React, HTML, CSS',
-                'Музыка и все, что с ней связано',
-              ]}
-            />
+            Tensorflow, TypeScript, React, HTML5, CSS3, JavaCore, php, NodeJs, SQL
           </Paragraph>
+        </Section>
+
+        <Section delay={0.3}>
+          <Heading as="h3" variant="section-title">
+            Ссылки
+          </Heading>
+          <List>
+            <ListItem>
+              <Link href="https://github.com/SelenZzz" target="_blank">
+                <Button variant="ghost" colorScheme="teal" leftIcon={<IoLogoGithub />}>
+                  @SelenZzz
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href="https://vk.com/postrockreverb" target="_blank">
+                <Button variant="ghost" colorScheme="teal" leftIcon={<Icon16LogoVk />}>
+                  @postrockreverb
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href="https://www.youtube.com/channel/UCDGXH9Q6duum-uR68uNt58A" target="_blank">
+                <Button variant="ghost" colorScheme="teal" leftIcon={<IoLogoTwitter />}>
+                  @heroinsadness
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href="https://www.instagram.com/postrockreverb/" target="_blank">
+                <Button variant="ghost" colorScheme="teal" leftIcon={<IoLogoInstagram />}>
+                  @postrockreverb
+                </Button>
+              </Link>
+            </ListItem>
+          </List>
         </Section>
       </Container>
     </Layout>
