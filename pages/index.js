@@ -28,7 +28,7 @@ const Page = () => {
           mb={6}
           align="center"
         >
-          Привет! Я Java-разработчик из Санкт-Петербурга
+          Привет! Я Full Stack разработчик из Санкт-Петербурга
         </Box>
 
         <Box display={{ md: 'flex' }}>
