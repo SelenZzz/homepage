@@ -65,20 +65,29 @@ const Page = () => {
 
         <Section delay={0.2}>
           <Heading as="h3" variant="section-title">
-            Био
+            Образование
           </Heading>
           <Paragraph>
             <BioSection>
               <BioYear>2019</BioYear>
               Лицей информационных технологий ДВФУ
             </BioSection>
-            <BioSection>
-              <BioYear>2022</BioYear>
-              ВКонтакте — Full Stack Developer
-            </BioSection>
+
             <BioSection>
               <BioYear>2023</BioYear>
               СПБГЭТУ ЛЭТИ
+            </BioSection>
+          </Paragraph>
+        </Section>
+
+        <Section delay={0.2}>
+          <Heading as="h3" variant="section-title">
+            Опыт работы
+          </Heading>
+          <Paragraph>
+            <BioSection>
+              <BioYear>2022</BioYear>
+              ВКонтакте — Full Stack Developer
             </BioSection>
           </Paragraph>
         </Section>
