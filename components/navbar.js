@@ -67,7 +67,7 @@ const Navbar = (props) => {
         <Stack
           direction={{ base: 'column', md: 'row' }}
           display={{ base: 'none', md: 'flex' }}
-          width={{ md: 'auto' }}
+          width={{ base: 'full', md: 'auto' }}
           alignItems="center"
           flexGrow={1}
           mt={{ base: 4, md: 0 }}
@@ -85,6 +85,10 @@ const Navbar = (props) => {
             GitHub
           </LinkItem>
         </Stack>
+
+        <Box flex={1} align="right">
+          <ThemeToggleButton />
+        </Box>
       </Container>
     </Box>
   );
