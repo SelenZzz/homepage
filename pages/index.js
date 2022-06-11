@@ -9,7 +9,7 @@ import {
   useColorModeValue,
   Button,
 } from '@chakra-ui/react';
-import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub, IoMail } from 'react-icons/io5';
+import { IoLogoYoutube, IoLogoInstagram, IoLogoGithub, IoMail } from 'react-icons/io5';
 import { Icon16LogoVk } from '@vkontakte/icons';
 import Layout from '../components/layouts/article';
 import Paragraph from '../components/paragraph';
@@ -123,7 +123,7 @@ const Page = () => {
             </ListItem>
             <ListItem>
               <Link href="https://www.youtube.com/channel/UCDGXH9Q6duum-uR68uNt58A" target="_blank">
-                <Button variant="ghost" colorScheme="teal" leftIcon={<IoLogoTwitter />}>
+                <Button variant="ghost" colorScheme="teal" leftIcon={<IoLogoYoutube />}>
                   @heroinsadness
                 </Button>
               </Link>

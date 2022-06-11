@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "Aleksandr's website",
   "scripts": {
-    "dev": "next dev -H 0.0.0.0 -p 40000",
+    "dev": "next dev -H 0.0.0.0 -p 40006",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p 40006",
     "prettier": "prettier -write .",
     "lint": "next lint"
   },
