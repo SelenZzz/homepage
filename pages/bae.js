@@ -1,15 +1,4 @@
-// import './styles.css';
-import {
-  Link,
-  List,
-  ListItem,
-  Container,
-  Box,
-  Heading,
-  Image,
-  useColorModeValue,
-  Button,
-} from '@chakra-ui/react';
+import { Container, Box, Heading, useColorModeValue } from '@chakra-ui/react';
 import Layout from '../components/layouts/article';
 
 import { useState, useEffect } from 'react';
